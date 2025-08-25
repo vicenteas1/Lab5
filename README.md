@@ -1,69 +1,98 @@
-# React + TypeScript + Vite
+# 🌐 Bootcamp UDD Desarrollo Fullstack - Proyecto Final
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Introducción
+En la era de la información, cada vez más servicios están disponibles en línea y, como desarrolladores, necesitamos saber cómo interactuar con ellos.  
+La mayoría de estos servicios exponen una **API (Application Programming Interface)** para que podamos consumir datos y mostrarlos en nuestras aplicaciones.  
 
-Currently, two official plugins are available:
+En este proyecto tendrás la oportunidad de trabajar con **APIs públicas** y mostrar la información en una interfaz construida con **React**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React permite a los desarrolladores crear aplicaciones **SPA (Single Page Applications)** que entregan una experiencia de usuario más rápida y fluida.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 2. Demo
+🔗 [Ver Demo Aquí](LINK)  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Para este laboratorio utilizamos la API gratuita [Exchangerate.host](https://exchangerate.host/) que provee información histórica sobre divisas en el tiempo.  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+La idea es que explores esta aplicación como inspiración y luego construyas tu propia propuesta usando **APIs públicas**.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 3. ¿Qué construirás?
+Construirás una **aplicación web con React** que consuma datos desde una API pública y los muestre en una interfaz.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Puedes buscar APIs públicas en este repositorio:  
+👉 [Lista de APIs públicas](https://github.com/public-apis/public-apis)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Tu aplicación deberá:
+- Conectarse a una API para obtener datos.
+- Mostrar los datos en una interfaz amigable.
+- Permitir alguna interacción del usuario (botones, formularios, filtros, etc).
+
+> 🎨 ¡Tienes libertad de elegir la temática! Puede ser sobre clima, música, videojuegos, geografía, mascotas, etc.
+
+---
+
+## 4. Objetivos de aprendizaje
+- Crear y organizar componentes en React.
+- Pasar datos entre componentes con **props**.
+- Manejar eventos en React.
+- Usar **useState** y **useEffect**.
+- Implementar rutas con **React Router**.
+- Manejar errores con **Error Boundaries**.
+- Conectar React con una API real.
+- (Opcional) Uso de **useRef**, **useCallback** y **useMemo**.
+
+---
+
+## 5. Requisitos y entregables
+### **React**
+- Uso de **Vite** para crear el proyecto.  
+- Crear componentes funcionales.  
+- Consumir una API pública.  
+- Uso de **Hooks** (mínimo `useEffect` para llamadas async).  
+- Implementar rutas con **React Router**.  
+- Manejar errores de renderizado con **Error Boundaries**.  
+- Usar un framework CSS (**Bootstrap, TailwindCSS, MUI, etc.**).  
+
+### **Control de versiones**
+- Crear repositorio en GitHub.  
+- Mínimo **5 commits** por persona.  
+- Incluir un **README.md** (este archivo 📄).  
+
+### **Despliegue**
+- Subir tu proyecto a un servicio como **Netlify, GitHub Pages o Render**.  
+
+### **Entrega a tiempo**
+- Respetar las fechas definidas por el bootcamp.  
+
+---
+
+## 6. Criterios de evaluación
+| Área                  | % del total |
+|-----------------------|-------------|
+| **React**             | 70%         |
+| **Control de versiones** | 15%      |
+| **Despliegue**        | 10%         |
+| **Entrega a tiempo**  | 5%          |
+
+---
+
+## 7. Entregas
+- Asegúrate de cumplir con todos los requisitos.  
+- Entrega tu proyecto a tiempo.  
+- Presenta tu proyecto frente a tus compañeros y coaches.  
+
+> 💡 Esta instancia es ideal para recibir feedback y mejorar tus habilidades.
+
+---
+
+## 8. Instalación y ejecución
+Clona el repositorio e instala las dependencias:
+
+```bash
+git clone https://github.com/usuario/bootcamp-fullstack-proyecto.git
+cd bootcamp-fullstack-proyecto
+npm install
+npm run dev
