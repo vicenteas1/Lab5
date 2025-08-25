@@ -1,0 +1,45 @@
+import weatherPng from "../../assets/weather.png";
+import underConstruction from "../../assets/site-under-construction.png";
+import "./under-construction.page.scss";
+
+export default function UnderConstructionPage() {
+  return (
+    <section className="uc-wrapper d-flex align-items-center">
+      <div className="container">
+        <div className="row align-items-center g-4">
+          <div className="col-12 col-lg-6">
+            <div className="mb-3">
+              <img src={weatherPng} alt="Weather animation" className="weather-icon" />
+            </div>
+
+            <div className="mb-2">
+              <h2 className="uc-kicker">Bajo</h2>
+              <h1 className="uc-title">Construcción</h1>
+            </div>
+
+            <div className="mb-4">
+              <p className="text-muted mb-0">
+                Estamos trabajando en esta sección. Pronto estará disponible.
+                Mientras tanto, puedes volver al inicio o contactarnos.
+              </p>
+            </div>
+
+            <div>
+              <a className="btn btn-primary btn-lg uc-cta" href="/home">
+                Home
+              </a>
+            </div>
+          </div>
+
+          <div className="col-12 col-lg-6 text-center">
+            <img
+              src={underConstruction}
+              alt="Under construction"
+              className="img-fluid uc-hero"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
