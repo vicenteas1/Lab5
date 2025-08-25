@@ -26,7 +26,7 @@ export default function UnderConstructionPage() {
             </div>
 
             <div>
-              <Link to="/home">Home</Link>
+              <Link to="/home" className="btn btn-primary">Home</Link>
             </div>
           </div>
 
