@@ -1,6 +1,7 @@
 import weatherPng from "../../assets/weather.png";
 import underConstruction from "../../assets/site-under-construction.png";
 import "./under-construction.page.scss";
+import { Link } from "react-router-dom";
 
 export default function UnderConstructionPage() {
   return (
@@ -25,9 +26,7 @@ export default function UnderConstructionPage() {
             </div>
 
             <div>
-              <a className="btn btn-primary btn-lg uc-cta" href="/home">
-                Home
-              </a>
+              <Link to="/home">Home</Link>
             </div>
           </div>
 
