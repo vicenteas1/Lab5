@@ -14,8 +14,8 @@ export default function AppRoutes() {
           <Route index element={<HomePage />} />  
           <Route path="home" element={<HomePage />} />
           <Route path="about" element={<About />} />
-          <Route path="/service/weather" element={<Weather />} />
-          <Route path="/service/stadistics" element={<Estadisticas />} />
+          <Route path="service/weather" element={<Weather />} />
+          <Route path="service/stadistics" element={<Estadisticas />} />
           <Route path="*" element={<UnderConstruction />} />
         </Route>
       </Routes>
