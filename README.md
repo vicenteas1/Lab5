@@ -91,8 +91,26 @@ Tu aplicación deberá:
 ## 8. Instalación y ejecución
 Clona el repositorio e instala las dependencias:
 
-```bash
-git clone https://github.com/usuario/bootcamp-fullstack-proyecto.git
-cd bootcamp-fullstack-proyecto
+git clone https://github.com/vicenteas1/Lab5.git
+cd Lab5
 npm install
 npm run dev
+
+Se debe generar el un archivo environment.tsx en la siguiente ruta src/config/environment/
+export const environment = {
+  environment: {
+    production: false,
+    development: true,
+    certification: false,
+  },
+  weatherApi: {
+    url:
+      import.meta.env.VITE_WEATHER_API_URL || "https://api.open-meteo.com/v1/forecast",
+    key: import.meta.env.VITE_WEATHER_API_KEY || "",
+  },
+  nominatimApi: {
+    url:
+      import.meta.env.VITE_NOMINATIM_API_URL || "https://nominatim.openstreetmap.org",
+    key: import.meta.env.VITE_WEATHER_API_KEY || "",
+  },
+};
